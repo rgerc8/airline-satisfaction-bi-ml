@@ -53,3 +53,84 @@ click.exceptions.Abort
 [0m19:33:01.802819 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 10.255378, "process_in_blocks": "0", "process_kernel_time": 0.039013, "process_mem_max_rss": "114212", "process_out_blocks": "8", "process_user_time": 0.619216}
 [0m19:33:01.803371 [debug] [MainThread]: Command `dbt init` succeeded at 19:33:01.803251 after 10.26 seconds
 [0m19:33:01.803748 [debug] [MainThread]: Flushing usage events
+[0m20:33:23.640398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c5e05e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c48bfd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c48bf9d0>]}
+
+
+============================== 20:33:23.643126 | f97bddab-85ba-4ff8-ba62-29f177c4b25f ==============================
+[0m20:33:23.643126 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:33:23.643449 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'use_colors': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_cache_events': 'False', 'empty': 'False', 'log_format': 'default', 'version_check': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'static_parser': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/rgerc/.dbt', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True'}
+[0m20:33:23.643752 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rgerc/Projects/airline-satisfaction/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:33:23.644263 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.041810505, "process_in_blocks": "0", "process_kernel_time": 0.037999, "process_mem_max_rss": "114524", "process_out_blocks": "8", "process_user_time": 0.628986}
+[0m20:33:23.644559 [debug] [MainThread]: Command `dbt run` failed at 20:33:23.644496 after 0.04 seconds
+[0m20:33:23.644762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c49188a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c486fad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c61c48dbf00>]}
+[0m20:33:23.644981 [debug] [MainThread]: Flushing usage events
+[0m20:33:24.129307 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:33:50.438675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e340dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e1e57ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e1e57c50>]}
+
+
+============================== 20:33:50.441885 | fd73d984-30b6-4816-9976-bb19df405856 ==============================
+[0m20:33:50.441885 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:33:50.442447 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'log_format': 'default', 'hints_enabled': 'True', 'printer_width': '80', 'fail_fast': 'False', 'empty': 'None', 'profiles_dir': '/home/rgerc/.dbt', 'static_parser': 'True', 'log_path': '/home/rgerc/Projects/airline-satisfaction/logs', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'debug': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'write_json': 'True', 'no_print': 'None'}
+[0m20:33:50.496799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd73d984-30b6-4816-9976-bb19df405856', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e2f51cd0>]}
+[0m20:33:50.502994 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:33:50.503439 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:33:50.503882 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.10424432, "process_in_blocks": "0", "process_kernel_time": 0.044071, "process_mem_max_rss": "116736", "process_out_blocks": "0", "process_user_time": 0.693118}
+[0m20:33:50.504116 [debug] [MainThread]: Command `cli deps` succeeded at 20:33:50.504068 after 0.10 seconds
+[0m20:33:50.504285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e1dc3ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e1c8c160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7062e207be50>]}
+[0m20:33:50.504464 [debug] [MainThread]: Flushing usage events
+[0m20:33:50.504838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdc0edd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdab37ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdab37c50>]}
+
+
+============================== 20:33:50.506494 | 92de4bfb-ff0a-452e-b5c7-479b61f11b40 ==============================
+[0m20:33:50.506494 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:33:50.506746 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'invocation_command': 'dbt ', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'hints_enabled': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'quiet': 'False', 'profiles_dir': '/home/rgerc/.dbt', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_path': '/home/rgerc/Projects/airline-satisfaction/logs', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m20:33:50.559590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92de4bfb-ff0a-452e-b5c7-479b61f11b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdbc31cd0>]}
+[0m20:33:50.565757 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:33:50.566158 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:33:50.566604 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.099630065, "process_in_blocks": "0", "process_kernel_time": 0.049939, "process_mem_max_rss": "116716", "process_out_blocks": "8", "process_user_time": 0.670184}
+[0m20:33:50.566833 [debug] [MainThread]: Command `cli deps` succeeded at 20:33:50.566786 after 0.10 seconds
+[0m20:33:50.566996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdaaa3ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbda96c160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77dbdad5be50>]}
+[0m20:33:50.567163 [debug] [MainThread]: Flushing usage events
+[0m20:33:50.994571 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:33:51.049215 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:33:52.986105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0626edde80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e062599bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e062599b9d0>]}
+
+
+============================== 20:33:52.989298 | 21b0b03e-371b-4418-8390-9e9270f64673 ==============================
+[0m20:33:52.989298 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:33:52.989881 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'write_json': 'True', 'empty': 'False', 'log_path': '/home/rgerc/Projects/airline-satisfaction/logs', 'indirect_selection': 'eager', 'profiles_dir': '/home/rgerc/.dbt', 'hints_enabled': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'no_print': 'None', 'log_format': 'default', 'fail_fast': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'printer_width': '80', 'version_check': 'True'}
+[0m20:33:53.066213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21b0b03e-371b-4418-8390-9e9270f64673', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0626a45cd0>]}
+[0m20:33:53.096347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21b0b03e-371b-4418-8390-9e9270f64673', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e062718b240>]}
+[0m20:33:53.097017 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m20:33:53.119056 [debug] [MainThread]: checksum: aad38d33af4690632a7a192fa2e18336b0a94ab469379d6c2e5bce407313fe3d, vars: {}, profile: airline_satisfaction, target: dev, version: 1.12.3
+[0m20:33:53.179782 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:33:53.179986 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:33:53.180111 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:33:53.180312 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.airline_satisfaction.marts
+- models.airline_satisfaction.staging
+- models.airline_satisfaction.ml
+- models.airline_satisfaction.intermediate
+[0m20:33:53.182122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21b0b03e-371b-4418-8390-9e9270f64673', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e062433ee50>]}
+[0m20:33:53.204211 [debug] [MainThread]: Wrote artifact WritableManifest to /home/rgerc/Projects/airline-satisfaction/target/manifest.json
+[0m20:33:53.205399 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/rgerc/Projects/airline-satisfaction/target/semantic_manifest.json
+[0m20:33:53.210796 [debug] [MainThread]: Wrote artifact OsiDocument to /home/rgerc/Projects/airline-satisfaction/target/osi_document.json
+[0m20:33:53.214154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21b0b03e-371b-4418-8390-9e9270f64673', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0623fdc500>]}
+[0m20:33:53.214367 [info ] [MainThread]: Found 477 macros
+[0m20:33:53.214522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21b0b03e-371b-4418-8390-9e9270f64673', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0623f01a90>]}
+[0m20:33:53.215205 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:33:53.216129 [debug] [MainThread]: Command end result
+[0m20:33:53.225935 [debug] [MainThread]: Wrote artifact WritableManifest to /home/rgerc/Projects/airline-satisfaction/target/manifest.json
+[0m20:33:53.226978 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/rgerc/Projects/airline-satisfaction/target/semantic_manifest.json
+[0m20:33:53.227937 [debug] [MainThread]: Wrote artifact OsiDocument to /home/rgerc/Projects/airline-satisfaction/target/osi_document.json
+[0m20:33:53.229486 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/rgerc/Projects/airline-satisfaction/target/run_results.json
+[0m20:33:53.229943 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.28123918, "process_in_blocks": "0", "process_kernel_time": 0.054104, "process_mem_max_rss": "129588", "process_out_blocks": "2144", "process_user_time": 0.842627}
+[0m20:33:53.230181 [debug] [MainThread]: Command `dbt run` succeeded at 20:33:53.230131 after 0.28 seconds
+[0m20:33:53.230367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0623ff0120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0625be53d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e062438e5d0>]}
+[0m20:33:53.230548 [debug] [MainThread]: Flushing usage events
+[0m20:33:53.727462 [debug] [MainThread]: An error was encountered while trying to flush usage events
