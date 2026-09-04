@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: airline_db
+    schema: raw
+
+    tables:
+      - name: airline_satisfaction
+        description: >
+          Raw airline passenger satisfaction dataset imported
+          from Kaggle.
